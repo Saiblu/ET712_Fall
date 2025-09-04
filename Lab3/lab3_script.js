@@ -98,3 +98,14 @@ while(true){
             break
         }
 }
+console.log("------ EXERCISE A ---------")
+
+console.log("-------- EXCERCISE B -------")
+let PIN = 1234
+let attempt_counter = 3
+while (true){
+    let user_pin = parseInt(prompt("Enter a pin number"))
+    if(){
+        user_pin = paraseInt(prompt("Enter a pin number"))
+        
+
