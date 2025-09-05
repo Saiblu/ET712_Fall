@@ -99,13 +99,36 @@ while(true){
         }
 }
 console.log("------ EXERCISE A ---------")
+let num = [-3, 10, 0, 8, -9, 5, -2, 8, 6, -1];
+let sumNeg = 0;
+let sumPos = 0;
+
+for (let i = 0; i < num.length; i++) {
+    if (num[i] < 0) {
+        sumNeg += num[i];
+    } else if (num[i] > 0) {
+        sumPos += num[i];
+    }
+}
+
+console.log(`Sum of all negative numbers = ${sumNeg}`);
+console.log(`Sum of all positive numbers = ${sumPos}`);
 
 console.log("-------- EXCERCISE B -------")
-let PIN = 1234
-let attempt_counter = 3
-while (true){
-    let user_pin = parseInt(prompt("Enter a pin number"))
-    if(){
-        user_pin = paraseInt(prompt("Enter a pin number"))
-        
+let PIN = 1234;
+let attempt_counter = 3;
+
+while (attempt_counter > 0) {
+    let user_pin = parseInt(prompt("Enter a 4-digit PIN number"));
+    if (user_pin === PIN) {
+        console.log("Your pin number is correct");
+        break;
+    } else {
+        attempt_counter--;
+        if (attempt_counter === 0) {
+            console.log("Account is locked!");
+        }
+    }
+}
+
 
